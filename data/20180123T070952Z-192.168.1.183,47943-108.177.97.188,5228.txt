@@ -1,0 +1,49 @@
+0 OpenStream ====> 
+39 (XMPPVersion=39)
+ 
+0 LoginRequest ====> 
+id: "gms-11.9.51-000"
+domain: "mcs.android.com"
+user: "3703353902415641358"
+resource: "3703353902415641358"
+auth_token: "7678424922338600526"
+device_id: "android-3364f4c0c70a7b0e"
+setting {
+  name: "ERR"
+  value: "20"
+}
+setting {
+  name: "CT"
+  value: "158"
+}
+setting {
+  name: "CONOK"
+  value: "578"
+}
+setting {
+  name: "os_ver"
+  value: "android-24"
+}
+setting {
+  name: "u:f"
+  value: "0"
+}
+setting {
+  name: "networkOn"
+  value: "1"
+}
+setting {
+  name: "networkOff"
+  value: "12"
+}
+heartbeat_stat {
+  ip: ""
+  timeout: false
+  interval_ms: 550000
+}
+use_rmq2: true
+account_id: 1
+auth_service: ANDROID_ID
+network_type: 1
+status: 0
+ 
