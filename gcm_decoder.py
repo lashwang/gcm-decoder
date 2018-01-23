@@ -195,10 +195,23 @@ class GCMDecoder(object):
         total_msg = []
         downstream_decoder = ChannelDecoder() #From Server
         upstream_decoder = ChannelDecoder() #From app
+        pre_start = 0
+        pre_length = 0
+        connect = 0
         for info in data_infos:
             error = False
             start = int(info[0])
             length = int(info[1])
+            if length == 1:
+                pre_start = start
+                pre_length = length
+                connect = 1
+                continue
+            if connect:
+                start = pre_start
+                length += pre_length
+                connect = 0
+
             msg_data = dump_data[start:start+length]
             #
             # if direction == 1:
